@@ -4,51 +4,57 @@ A complete attendance system package containing a QR code generator app and a QR
 
 ## TABLE OF CONTENTS
 
-- [LIBRARIES USED](#libraries-used)
-  * [FOR QR CODE GENERATOR - MOBILE APPLICATION](#for-qr-code-generator---mobile-application)
-  * [FOR QR CODE SCANNER](#for-qr-code-scanner)
-- [INTERFACE OF THE MOBILE APPLICATION](#interface-of-the-mobile-application)
-  * [SCREEN 1 - HOME](#screen-1---home)
-  * [SCREEN 2- QR CODE GENERATION SCREEN](#screen-2--qr-code-generation-screen)
+- [1. LIBRARIES USED](#1-libraries-used)
+  * [1.1 FOR QR CODE GENERATOR - MOBILE APPLICATION](#11-for-qr-code-generator---mobile-application)
+  * [1.2 FOR QR CODE SCANNER](#12-for-qr-code-scanner)
+- [2. INTERFACE OF THE MOBILE APPLICATION](#2-interface-of-the-mobile-application)
+  * [2.1 SCREEN 1 - HOME](#21-screen-1---home)
+  * [2.2 SCREEN 2- QR CODE GENERATION SCREEN](#22-screen-2--qr-code-generation-screen)
+- [3. BUILD PROCEDURE](#3-build-procedure)
+  * [3.1 QR CODE GENERATOR - MOBILE APPLICATION](#31-qr-code-generator---mobile-application)
+  * [3.2 QR CODE SCANNER](#32-qr-code-scanner)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 
-## LIBRARIES USED
 
-### FOR QR CODE GENERATOR - MOBILE APPLICATION
+## 1. LIBRARIES USED
 
-1.Kivy
+### 1.1 FOR QR CODE GENERATOR - MOBILE APPLICATION
 
-2.KivyMD
+1. Kivy
 
-3.qrcode
+2. KivyMD
 
-4.plyer
+3. qrcode
 
-5.pyjnius
+4. plyer
 
-6.android.permissions (This package will only work in android, so use it only while converting the python file to Apk)
+5. pyjnius
 
-### FOR QR CODE SCANNER
+6. android.permissions (This package will only work in android, so use it only while converting the python file to Apk)
 
-1.OpenCV
+### 1.2 FOR QR CODE SCANNER
 
-2.pyzbar
+1. OpenCV
 
-3.Xlwt
+2. pyzbar
 
-4.datetime
+3. Xlwt
 
-## INTERFACE OF THE MOBILE APPLICATION
+4. datetime
 
-### SCREEN 1 - HOME
+## 2. INTERFACE OF THE MOBILE APPLICATION
+
+### 2.1 SCREEN 1 - HOME
 <img src="https://user-images.githubusercontent.com/58739134/180676388-01228cc5-9f92-4187-9c4a-66d0b44e1c14.jpg" width=300 >
 
-### SCREEN 2- QR CODE GENERATION SCREEN
+### 2.2 SCREEN 2- QR CODE GENERATION SCREEN
 <img src="https://user-images.githubusercontent.com/58739134/180679026-4e645cf3-16aa-421b-bfa9-6e97f2ef2ed9.jpg" width=300 >
 
-## BUILD PROCEDURE
+## 3. BUILD PROCEDURE
 
-### QR CODE GENERATOR - MOBILE APPLICATION
+### 3.1 QR CODE GENERATOR - MOBILE APPLICATION
 
 1. The QR-Code Generator is developed using the Kivy Framework in Python.
 
@@ -62,7 +68,7 @@ A complete attendance system package containing a QR code generator app and a QR
 
 6. Execute the commands given in the [Google_Collab_Commands.txt](https://github.com/Dalersingh-rs/QR-code-based-Attendance-System-Mobile-Application-using-Kivy-and-OpenCV-in-Python/blob/main/Google_Collab_Commands.txt) file to convert it to an APK file.
 
-### QR CODE SCANNER 
+### 3.2 QR CODE SCANNER 
 
 1. The QR Code Scanner uses OpenCV to access the camera and read the QR code.
 
@@ -71,7 +77,3 @@ A complete attendance system package containing a QR code generator app and a QR
 3. When the generated QR-Code is scanned, Xlwt package is used to write the inidivual's data to an excel file created under the name of current date/time using the datetime package.
 
 #### THANK YOU :)
-
-
-
- 
