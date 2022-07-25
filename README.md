@@ -14,9 +14,6 @@ A complete attendance system package containing a QR code generator app and a QR
   * [3.1 QR CODE GENERATOR - MOBILE APPLICATION](#31-qr-code-generator---mobile-application)
   * [3.2 QR CODE SCANNER](#32-qr-code-scanner)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
-
 
 ## 1. LIBRARIES USED
 
