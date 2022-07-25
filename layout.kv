@@ -1,0 +1,69 @@
+<Function>:
+    Screen:
+        name: 'Welcome_screen'
+        MDToolbar:
+            title:'QR Code Generator'
+            font_style: 'H5'
+            pos_hint:{"top":1}
+            specific_text_color:0,0,0,1
+            elevation:8
+        BoxLayout:
+            size_hint_y: .1
+            padding:"10dp"
+            pos_hint:{"center_y": .75}
+            MDTextField:
+                id:link_text_first
+                hint_text: 'Enter your First name'
+
+        BoxLayout:
+            size_hint_y: .1
+            padding:"10dp"
+            pos_hint:{"center_y": .65}
+            MDTextField:
+                id:link_text_last
+                hint_text: 'Enter your Last name'
+
+
+        BoxLayout:
+            size_hint_y: .1
+            padding:"10dp"
+            pos_hint:{"center_y": .55}
+            MDTextField:
+                id:link_number
+                hint_text: 'Enter your Student ID'
+
+        MDRectangleFlatButton:
+            text: 'Generate QR Code'
+            pos_hint:{'center_x': .5, 'center_y': .3}
+            on_release: root.generate_qr_code(root)
+
+        MDRectangleFlatButton:
+            text: 'Reset'
+            pos_hint:{'center_x': .5, 'center_y': .2}
+            on_release: root.generate_new(root)
+
+    Screen:
+        name:'image'
+
+        BoxLayout:
+            size_hint_y: .6
+            pos_hint: {'center_y': .5}
+            padding:"10dp"
+            Image:
+                id: img_created
+
+        MDLabel:
+            text: "QR Code"
+            font_style: 'H4'
+            pos_hint:{'center_y': .9}
+            halign: 'center'
+
+        MDRectangleFlatButton:
+            text: 'Back'
+            pos_hint:{'center_x':.5,'center_y': .1}
+            on_release: root.Back(root)
+
+        MDRectangleFlatButton:
+            text: 'Generate New'
+            pos_hint:{'center_x':.5,'center_y': .2}
+            on_release: root.generate_new(root)
